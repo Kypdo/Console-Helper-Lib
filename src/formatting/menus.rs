@@ -1,3 +1,4 @@
+//TODO : traduire EN, documenter tout, deplacer struct
 /**
  * Crée un menu simple prédéfini avec options numérotées et alignées à gauche (possibilité de les centrer avec le paramètre correspondant).
  * Checker que la valeur n'est pas None avant utilisation.
@@ -107,13 +108,6 @@ pub struct Frame {
 }
 
 impl Frame {
-    pub fn default() -> Frame {
-        Frame {
-            angle: '+',
-            horizontal: '-',
-            vertical: '|',
-        }
-    }
     pub fn make_frame(angle: char, horizontal: char, vertical: char) -> Frame {
         Frame {
             angle,
